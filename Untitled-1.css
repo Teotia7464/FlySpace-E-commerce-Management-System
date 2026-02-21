@@ -1,0 +1,48 @@
+/* Custom Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Glassmorphism for the Navigation */
+
+nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* Hover effect for Product Images */
+
+.product-card img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Shopping Cart Sidebar Animation */
+
+#cart-sidebar {
+    transition: transform 0.4s ease-in-out;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.cart-open #cart-sidebar {
+    transform: translateX(0);
+}
+
+
+/* Button Pulse Animation */
+
+.btn-animate {
+    transition: all 0.3s ease;
+}
+
+.btn-animate:active {
+    transform: scale(0.95);
+}
